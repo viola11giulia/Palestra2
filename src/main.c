@@ -47,8 +47,6 @@ int main() {
             
             // Inserimento di una nuova lezione
             case 2: {
-                int id_lezione, max_partecipanti;
-                char nome[50], giorno[15], orario[6];
                 lezioni = aggiungi_lezione(lezioni);
                 printf("Premi Invio per continuare...\n");
                 while (getchar() != '\n'); 
