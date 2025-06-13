@@ -30,7 +30,7 @@ int main() {
     Abbonamento* abbonamento = crea_abbonamento_test(1, "mensile", "01/06/2025", "30/06/2025");
 
     // Test 1: Abbonamento attivo
-    const char* data_oggi = "15/06/2025";
+    const char* data_oggi = "01/06/2025";
     int stato = stato_abbonamento(abbonamento->data_inizio, abbonamento->data_fine, data_oggi);
     if (stato == 1)
         printf("✅ Test 1 superato: abbonamento attivo correttamente rilevato.\n");
@@ -38,7 +38,7 @@ int main() {
         printf("❌ Test 1 fallito.\n");
 
     // Test 2: Abbonamento non ancora attivo
-    data_oggi = "01/06/2025";
+    data_oggi = "30/05/2025";
     stato = stato_abbonamento(abbonamento->data_inizio, abbonamento->data_fine, data_oggi);
     if (stato == 0)
         printf("✅ Test 2 superato: abbonamento non ancora attivo rilevato.\n");
