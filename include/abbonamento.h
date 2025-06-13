@@ -12,6 +12,7 @@ typedef struct Abbonamento {
     struct Abbonamento* next; // Puntatore di tipo Abbonamento per scorrere la lista
 } Abbonamento; 
 
+int stato_abbonamento(const char *data_inizio, const char *data_fine, const char *data_oggi);
 /*
 * Funzione: crea_abbonamento
 * ----------------------------------
