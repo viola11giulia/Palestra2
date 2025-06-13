@@ -38,7 +38,7 @@ int main() {
         printf("❌ Test 1 fallito.\n");
 
     // Test 2: Abbonamento non ancora attivo
-    data_oggi = "30/05/2025";
+    data_oggi = "01/06/2025";
     stato = stato_abbonamento(abbonamento->data_inizio, abbonamento->data_fine, data_oggi);
     if (stato == 0)
         printf("✅ Test 2 superato: abbonamento non ancora attivo rilevato.\n");
